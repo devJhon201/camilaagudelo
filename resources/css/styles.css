@@ -1,0 +1,155 @@
+@font-face {
+	font-family: "Pacifico";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/pacifico/v17/FwZY7-Qmy14u9lezJ-6H6Mk.woff2)
+		format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+		U+FEFF, U+FFFD;
+}
+
+@font-face {
+	font-family: "Balsamiq Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/balsamiqsans/v3/P5sEzZiAbNrN8SB3lQQX7Pncwd4XIA.woff2)
+		format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+		U+FEFF, U+FFFD;
+}
+
+:root {
+	--color-principal: #512a80;
+
+	--fuente-titulos: "Pacifico", serif;
+	--fuente-principal: "Balsamiq Sans", serif;
+	--color-header: black;
+}
+
+/* Generales */
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: var(--fuente-principal);
+	text-align: center;
+	margin: 0;
+	background-image: url("../imagenes/fondo-servicios.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* Header */
+
+#header {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: var(--color-header);
+}
+
+h1 {
+	display: flex;
+	flex-direction: column;
+}
+
+#primer-nombre {
+	margin: 0 auto;
+	color: var(--color-header);
+}
+
+#segundo-nombre {
+	margin: 0 auto;
+	color: var(--color-header);
+}
+
+.letra-titulo {
+	display: inline-block;
+	padding: 0.7rem;
+	font-family: var(--fuente-titulos);
+	font-size: 1.625rem;
+}
+
+#header p {
+	font-weight: 300;
+	font-size: 0.875rem;
+}
+
+#flecha {
+	height: 75px;
+	width: 75px;
+	margin: auto;
+}
+
+/* Servicios */
+
+.servicios-contenedor {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+}
+
+.servicios {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	width: 90%;
+	position: relative;
+	z-index: 1;
+}
+
+.imagenes-servicios {
+	margin: 15px;
+	height: auto;
+	width: 90%;
+}
+
+.titulo-multiple-servicios {
+	display: block;
+}
+
+/* Próximamente */
+
+.proximamente {
+	color: rgb(71, 70, 70);
+}
+
+#fondo-gris {
+	background-color: rgb(71, 70, 70);
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 1;
+	opacity: 0.4;
+}
+
+/* Contactar */
+
+#contactar-contenedor {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px;
+	gap: 10px;
+	border: 2px solid green;
+	border-radius: 20px;
+	color: green;
+}
+
+#contactar-enlace {
+	text-decoration: none;
+}
