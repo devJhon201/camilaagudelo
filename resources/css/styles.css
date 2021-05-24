@@ -101,7 +101,7 @@ h1 {
 	border-style: dashed solid;
 	outline: gray solid 1px;
 	width: 90%;
-	margin: 0 auto;
+	margin: 20px auto;
 	animation: cambiacolor 2s infinite alternate;
 }
 
