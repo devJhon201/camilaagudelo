@@ -97,10 +97,22 @@ h1 {
 	grid-template-areas:
 		"titulo titulo"
 		"imagen contenido";
-	border: 10px solid black;
+	border: 5px solid black;
 	border-style: dashed solid;
+	outline: gray solid 1px;
 	width: 90%;
 	margin: 0 auto;
+	animation: cambiacolor 2s infinite alternate;
+}
+
+@keyframes cambiacolor {
+	100% {
+		color: white;
+		border: 5px solid white;
+		border-style: dashed solid;
+		background-color: black;
+		outline: gray solid 1px;
+	}
 }
 
 .promocion h2 {
@@ -113,8 +125,9 @@ h1 {
 	flex-direction: column;
 }
 
-#precio {
+.precio {
 	display: block;
+	font-weight: bold;
 }
 .promocion img {
 	width: 90%;
