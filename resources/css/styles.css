@@ -22,7 +22,7 @@
 :root {
 	--color-principal: #512a80;
 
-	--fuente-titulos: "Pacifico", serif;
+	--fuente-titulos: 'Playfair Display', serif;
 	--fuente-principal: "Balsamiq Sans", serif;
 	--color-header: black;
 }
