@@ -90,6 +90,38 @@ h1 {
 	margin: auto;
 }
 
+/* Promoción */
+
+.promocion {
+	display: grid;
+	grid-template-areas:
+		"titulo titulo"
+		"imagen contenido";
+	border: 10px solid black;
+	border-style: dashed solid;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.promocion h2 {
+	grid-area: titulo;
+}
+
+.contenido-promocion {
+	grid-area: contenido;
+	display: flex;
+	flex-direction: column;
+}
+
+#precio {
+	display: block;
+}
+.promocion img {
+	width: 90%;
+	height: auto;
+	grid-area: imagen;
+}
+
 /* Servicios */
 
 .servicios-contenedor {
