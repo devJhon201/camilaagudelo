@@ -40,6 +40,7 @@ body {
 	font-family: var(--fuente-principal);
 	text-align: center;
 	margin: 0;
+	background-color: black;
 }
 
 /* Header */
@@ -51,7 +52,7 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	color: var(--color-header);
-	background-image: url("../imagenes/fondo-pagina-principal.jpg");
+	background-image: url("../imagenes/fondo-pagina-principal.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
