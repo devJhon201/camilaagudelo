@@ -102,10 +102,10 @@ h1 {
 	outline: gray solid 1px;
 	width: 90%;
 	margin: 20px auto;
-	animation: cambiacolor 5s infinite alternate;
+	/* animation: cambiacolor 5s infinite alternate; */
 }
 
-@keyframes cambiacolor {
+/* @keyframes cambiacolor {
 	100% {
 		color: white;
 		border: 5px solid white;
@@ -113,7 +113,7 @@ h1 {
 		background-color: black;
 		outline: gray solid 1px;
 	}
-}
+} */
 
 .promocion h2 {
 	grid-area: titulo;
@@ -124,13 +124,14 @@ h1 {
 	width: 90%;
 	height: auto;
 	grid-area: imagen;
-	margin: 0 12px 12px;
+	margin: auto 12px;
 }
 
 .contenido-promocion {
 	grid-area: contenido;
 	display: flex;
 	flex-direction: column;
+	gap: 5px;
 }
 
 .precio {
@@ -143,6 +144,19 @@ h1 {
 	font-style: italic;
 }
 
+.provisional {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.provisional svg {
+	display: inline;
+}
+
+.provisional p {
+	display: inline;
+}
 /* Servicios */
 
 .servicios-contenedor {
