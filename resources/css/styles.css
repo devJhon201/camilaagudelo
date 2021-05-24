@@ -156,6 +156,7 @@ h1 {
 
 .provisional p {
 	display: inline;
+	font-weight: bold;
 }
 /* Servicios */
 
