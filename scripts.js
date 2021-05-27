@@ -6,6 +6,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
 		const headerStyle = document.getElementById("header");
 		headerStyle.style.height = window.innerHeight + "px";
 	} else {
-		/* The viewport is greater than 700 pixels wide */
+		/* The viewport is greater than 768 pixels wide */
 	}
 });
