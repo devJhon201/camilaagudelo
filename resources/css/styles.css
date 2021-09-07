@@ -133,6 +133,10 @@ img {
 
 /* Promocion */
 
+#promocion h3 {
+  text-transform: uppercase;
+}
+
 .contenido-promocion {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
