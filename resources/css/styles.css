@@ -1,212 +1,273 @@
 @font-face {
-	font-family: "Playfair Display";
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
-	src: url(https://fonts.gstatic.com/s/playfairdisplay/v22/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtM.woff2)
-		format("woff2");
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-		U+FEFF, U+FFFD;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v22/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtM.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 
 @font-face {
-	font-family: "Balsamiq Sans";
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
-	src: url(https://fonts.gstatic.com/s/balsamiqsans/v3/P5sEzZiAbNrN8SB3lQQX7Pncwd4XIA.woff2)
-		format("woff2");
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-		U+FEFF, U+FFFD;
+  font-family: "Balsamiq Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/balsamiqsans/v3/P5sEzZiAbNrN8SB3lQQX7Pncwd4XIA.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 
 @font-face {
-	font-family: "Balsamiq Sans";
-	font-style: normal;
-	font-weight: 700;
-	font-display: swap;
-	src: url(https://fonts.gstatic.com/s/balsamiqsans/v3/P5sZzZiAbNrN8SB3lQQX7PncyWUyNYhsAg.woff2)
-		format("woff2");
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-		U+FEFF, U+FFFD;
+  font-family: "Balsamiq Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/balsamiqsans/v3/P5sZzZiAbNrN8SB3lQQX7PncyWUyNYhsAg.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 
 :root {
-	--color-principal: #512a80;
+  --color-principal: #512a80;
 
-	--fuente-titulos: "Playfair Display", serif;
-	--fuente-principal: "Balsamiq Sans", serif;
-	--color-header: black;
+  --fuente-titulos: "Playfair Display", serif;
+  --fuente-principal: "Balsamiq Sans", serif;
+  --color-header: black;
 }
 
 /* Generales */
 
 html {
-	font-size: 16px;
+  font-size: 16px;
 }
 
 body {
-	font-family: var(--fuente-principal);
-	text-align: center;
-	margin: 0;
+  font-family: var(--fuente-principal);
+  text-align: center;
+  margin: 0;
 }
 
 img {
-	max-width: 25rem;
+  max-width: 25rem;
 }
 
 @media only screen and (min-width: 768px) {
-	html {
-		line-height: 1.5;
-		font-size: 18px;
-	}
+  html {
+    line-height: 1.5;
+    font-size: 18px;
+  }
+}
+
+/* Utilidades */
+
+.cursiva {
+  font-style: italic;
 }
 
 /* Header */
 
 #header {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	color: var(--color-header);
-	background-image: url("../imagenes/fondo-pagina-principal.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--color-header);
+  background-image: url("../imagenes/fondo-pagina-principal.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #titulo {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #primer-nombre {
-	margin: 0 auto;
-	color: var(--color-header);
+  margin: 0 auto;
+  color: var(--color-header);
 }
 
 #segundo-nombre {
-	margin: 0 auto;
-	color: var(--color-header);
+  margin: 0 auto;
+  color: var(--color-header);
 }
 
 .letra-titulo {
-	display: inline-block;
-	padding: 0.7rem;
-	font-family: var(--fuente-titulos);
-	font-size: 1.625rem;
+  display: inline-block;
+  padding: 0.7rem;
+  font-family: var(--fuente-titulos);
+  font-size: 1.625rem;
 }
 
 #header p {
-	font-weight: 300;
-	font-size: 0.875rem;
+  font-weight: 300;
+  font-size: 0.875rem;
 }
 
 #flecha {
-	height: 75px;
-	width: 75px;
-	margin: auto;
+  height: 75px;
+  width: 75px;
+  margin: auto;
 }
 
 @media only screen and (min-width: 768px) {
-	#header {
-		height: 175px;
-	}
+  #header {
+    height: 175px;
+  }
 
-	#titulo {
-		flex-direction: row;
-	}
+  #titulo {
+    flex-direction: row;
+  }
 
-	#flecha {
-		display: none;
-	}
+  #flecha {
+    display: none;
+  }
+}
+
+/* Promocion */
+#promocion {
+  height: 100vh;
+}
+
+.contenido-promocion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 2fr 1fr;
+}
+
+.contenido-promocion img {
+  height: 300px;
+  width: auto;
+  margin: auto;
+}
+
+.texto-promocion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.precio-promocion {
+  font-weight: bold;
+}
+
+.redes-sociales-promocion {
+  grid-column: 1 / 3;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.redes-sociales-promocion a {
+  text-decoration: none;
+  color: black;
+}
+
+.redes-sociales-promocion:visited {
+  color: black;
+}
+
+.contenido-redes-sociales-promocion {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  #promocion {
+    height: unset;
+  }
 }
 
 /* Servicios */
 
 .servicios-contenedor {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
 
 .servicios {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: white;
-	width: 90%;
-	position: relative;
-	z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 90%;
+  position: relative;
+  z-index: 1;
 }
 
 .imagenes-servicios {
-	margin: 15px;
-	height: auto;
-	width: 90%;
+  margin: 15px;
+  height: auto;
+  width: 90%;
 }
 
 .titulo-multiple-servicios {
-	display: block;
+  display: block;
 }
 
 @media only screen and (min-width: 768px) {
-	.servicios-contenedor {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		justify-content: center;
-		align-items: flex-start;
-		align-content: center;
-		margin: 0px auto;
-	}
+  .servicios-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    margin: 0px auto;
+  }
 
-	.servicios img {
-		height: 180px;
-		width: auto;
-	}
+  .servicios img {
+    height: 180px;
+    width: auto;
+  }
 }
 
 /* Próximamente */
 
 .proximamente {
-	color: rgb(71, 70, 70);
+  color: rgb(71, 70, 70);
 }
 
 #fondo-gris {
-	background-color: rgb(71, 70, 70);
-	position: absolute;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	z-index: 1;
-	opacity: 0.4;
+  background-color: rgb(71, 70, 70);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0.4;
 }
 
 /* Contactar */
 
 #contactar-contenedor {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 20px;
-	gap: 10px;
-	border: 2px solid green;
-	border-radius: 20px;
-	color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  gap: 10px;
+  border: 2px solid green;
+  border-radius: 20px;
+  color: green;
 }
 
 #contactar-enlace {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 #jhon-cardona {
-	font-size: small;
-	text-decoration: none;
-	color: gray;
+  font-size: small;
+  text-decoration: none;
+  color: gray;
 }
