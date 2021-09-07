@@ -132,9 +132,6 @@ img {
 }
 
 /* Promocion */
-#promocion {
-  height: 100vh;
-}
 
 .contenido-promocion {
   display: grid;
@@ -178,12 +175,6 @@ img {
   display: flex;
   align-items: center;
   gap: 5px;
-}
-
-@media only screen and (min-width: 768px) {
-  #promocion {
-    height: unset;
-  }
 }
 
 /* Servicios */
