@@ -210,6 +210,9 @@ img {
 .titulo-multiple-servicios {
   display: block;
 }
+.añadido-titulo {
+  font-size: 75%;
+}
 
 @media only screen and (min-width: 768px) {
   .servicios-contenedor {
