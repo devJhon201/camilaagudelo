@@ -203,7 +203,7 @@ img {
 
 .imagenes-servicios {
   margin: 15px;
-  height: 400px;
+  max-height: 400px;
   width: auto;
   max-width: 90%;
 }
